@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+    height: 0px;
+    background: #ccc;
+
+}
+
+/*定义滚动条轨道（凹槽）样式*/
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* 较少使用 */
+    border-radius: 3px;
+}
+
+/*定义滑块 样式*/
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    height: 50px;
+    /* 滚动条滑块长度 */
+    background-color: #007acc;
+}
+xi {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main {
+
+  user-select: none;
+  width: 1500px;
+  height: 3500px;
+  margin-left: 200px;
+
+}
+
+.left {
+  user-select: none;
+  border-width: 5px;
+  border-style: solid;
+  border-color: antiquewhite;
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 347px;
+  height: 191px;
+  overflow: hidden;
+}
+
+.trs {
+  user-select: none;
+  border-width: 5px;
+  border-style: solid;
+  border-color: antiquewhite;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 347px;
+  height: 191px;
+  transition: all 0.5s;
+
+}
+
+.right {
+  user-select: none;
+  border-width: 5px;
+  border-style: solid;
+  border-color: antiquewhite;
+  float: left;
+  margin-left: 20px;
+
+  margin-top: 20px;
+  width: 347px;
+  height: 191px;
+  transition: all 0.5s;
+}
+
+.left li {
+  user-select: none;
+  position: relative;
+  top: -140px;
+  left: 130px;
+  transition: all 0.5s;
+}
+
+.trs li {
+  position: relative;
+  user-select: none;
+  top: -140px;
+  left: 130px;
+  transition: all 0.5s;
+}
+
+.right li {
+  position: relative;
+  top: -140px;
+  user-select: none;
+  left: 130px;
+  transition: all 0.5s;
+}
+
+.bon {
+  float: left;
+  position: absolute;
+  user-select: none;
+  top: 70px;
+  left: 350px;
+  z-index: 19;
+}
+
+.left:hover {
+  animation: move .5s linear forwards;
+}
+
+.trs:hover {
+  animation: move .5s linear forwards;
+
+}
+
+.right:hover {
+  animation: move .5s linear forwards;
+
+}
+
+.left li:hover {
+  transform: translateY(-10px);
+}
+
+.trs li:hover {
+  transform: translateY(-10px);
+
+}
+
+.right li:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.v1id {
+  user-select: none;
+  margin-left: 40px;
+  width: 1400px;
+  height: auto;
+  z-index: 10;
+
+}
+
+.top {
+  user-select: none;
+  z-index: 100;
+  margin-left: 215px;
+
+}

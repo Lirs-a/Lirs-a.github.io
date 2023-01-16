@@ -1,0 +1,710 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+body {
+    transform-origin: 0% 0%;
+    transform: scale(0.789);
+    height: 900px;
+   
+}
+li {
+    list-style-type: none;
+}
+
+.main {
+    background-image: url(../img/img4/back/10001.jpg);
+    width: 1920px;
+    height: 1080px;
+    user-select: none;
+    overflow: hidden;
+}
+
+.back {
+    z-index: 1;
+}
+
+.biaoti {
+    position: absolute;
+    top: 100px;
+    left: 630px;
+    z-index: 2;
+    user-select: none;
+}
+
+.pic1 {
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    z-index: 3;
+    user-select: none;
+}
+
+.pic1active {
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    z-index: 3;
+    user-select: none;
+    animation: rotateAlbumArt 3s linear 0s infinite forwards;
+}
+
+@keyframes rotateAlbumArt {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+.pic2 {
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    z-index: 4;
+    transition: all 3s;
+    user-select: none;
+}
+
+.pic1:hover {
+    transform: rotate(360deg);
+
+}
+
+.pic3 {
+    position: absolute;
+    top: 600px;
+    left: 330px;
+    z-index: 5;
+    user-select: none;
+}
+
+.pic4 {
+    position: absolute;
+    top: 690px;
+    left: 400px;
+    z-index: 10;
+    user-select: none;
+}
+
+.pic5 {
+    position: absolute;
+    top: 630px;
+    left: 600px;
+    z-index: 7;
+    user-select: none;
+}
+
+.pic6 {
+    position: absolute;
+    top: 630px;
+    left: 1200px;
+    z-index: 7;
+    user-select: none;
+}
+
+.pic6stic {
+    position: absolute;
+    top: 630px;
+    left: 1200px;
+    opacity: 0;
+    z-index: 9;
+    user-select: none;
+
+
+}
+
+.pic6_1 {
+    position: absolute;
+    top: 630px;
+    left: 1200px;
+    z-index: 8;
+    animation: bn 3s linear 0s infinite forwards;
+    user-select: none;
+}
+
+@keyframes bn {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pic7 {
+    position: absolute;
+    top: 674px;
+    left: 385px;
+    z-index: 7;
+    animation: an 1.5s linear 0s infinite forwards;
+    user-select: none;
+}
+
+@keyframes an {
+
+    0% {
+        opacity: 0;
+        scale: 0.80;
+    }
+
+    50% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pic8 {
+    position: absolute;
+    top: 620px;
+    left: 1010px;
+    z-index: 6;
+    user-select: none;
+}
+
+.pic8stic {
+    position: absolute;
+    top: 620px;
+    left: 1010px;
+    z-index: 6;
+    transform-origin: right center;
+    animation: chuiback 0.4s linear 0s forwards;
+    user-select: none;
+}
+
+.pic8active {
+    position: absolute;
+    top: 620px;
+    left: 1010px;
+    z-index: 6;
+    transform-origin: right center;
+    animation: chui 0.4s linear 0s forwards;
+    user-select: none;
+}
+
+@keyframes chui {
+
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(45deg);
+    }
+}
+
+@keyframes chuiback {
+
+    0% {
+        transform: rotateZ(45deg);
+    }
+
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+.b1 {
+    position: absolute;
+    top: 710px;
+    left: 620px;
+    user-select: none;
+    z-index: 7;
+}
+
+.b1:hover {
+    animation: big 0.5s linear 0s forwards;
+}
+
+.b2 {
+    position: absolute;
+    top: 710px;
+    left: 1120px;
+    z-index: 7;
+    user-select: none;
+
+}
+
+.b2:hover {
+    animation: big 0.5s linear 0s forwards;
+}
+
+.biaoti:hover {
+    animation: big1 0.5s linear 0s forwards;
+}
+
+@keyframes big1 {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.06)
+    }
+
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.2)
+    }
+
+}
+
+.side1 {
+    position: absolute;
+    top: 410px;
+    user-select: none;
+    left: 220px;
+    z-index: 7;
+}
+
+.side2 {
+    position: absolute;
+    top: 700px;
+    left: 250px;
+    user-select: none;
+    z-index: 7;
+}
+
+.side3 {
+    position: absolute;
+    top: 410px;
+    left: 1420px;
+    user-select: none;
+    z-index: 7;
+}
+
+.side4 {
+    position: absolute;
+    top: 700px;
+    left: 1450px;
+    user-select: none;
+    z-index: 7;
+}
+
+.left1 {
+    position: absolute;
+    top: 400px;
+    user-select: none;
+    left: 240px;
+    z-index: 7;
+}
+
+.left2 {
+    position: absolute;
+    top: 500px;
+    user-select: none;
+    left: 300px;
+    z-index: 7;
+}
+
+.left3 {
+    position: absolute;
+    top: 450px;
+    user-select: none;
+    left: 320px;
+    z-index: 7;
+}
+
+.left4 {
+    position: absolute;
+    user-select: none;
+    top: 410px;
+    left: 140px;
+    z-index: 7;
+}
+
+.left5 {
+    position: absolute;
+    user-select: none;
+    top: 480px;
+    left: 200px;
+    z-index: 7;
+}
+
+.left6 {
+    position: absolute;
+    user-select: none;
+    top: 400px;
+    left: 320px;
+    z-index: 7;
+}
+
+.left7 {
+    position: absolute;
+    top: 300px;
+    user-select: none;
+    left: 150px;
+    z-index: 7;
+}
+
+.right1 {
+    position: absolute;
+    top: 800px;
+    left: 1450px;
+    user-select: none;
+    z-index: 7;
+}
+
+.right2 {
+    position: absolute;
+    top: 450px;
+    user-select: none;
+    left: 1350px;
+    z-index: 7;
+}
+
+.right3 {
+    position: absolute;
+    top: 200px;
+    user-select: none;
+    left: 1400px;
+    z-index: 7;
+}
+
+.right4 {
+    position: absolute;
+    user-select: none;
+    top: 400px;
+    left: 1420px;
+    z-index: 7;
+}
+
+.img1 {
+    position: absolute;
+    user-select: none;
+    top: 663px;
+    left: 805px;
+    z-index: 101;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.img2 {
+    position: absolute;
+    top: 688px;
+    left: 910px;
+    z-index: 99;
+    width: 100px;
+    user-select: none;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.img2shadow {
+    position: absolute;
+    top: 688px;
+    left: 910px;
+    z-index: 99;
+    width: 100px;
+    user-select: none;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.img3 {
+    position: absolute;
+    top: 688px;
+    left: 750px;
+    z-index: 99;
+    width: 100px;
+    user-select: none;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.img3shadow {
+    position: absolute;
+    top: 688px;
+    left: 750px;
+    z-index: 99;
+    width: 100px;
+    user-select: none;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.img4 {
+    position: absolute;
+    top: 698px;
+    left: 980px;
+    z-index: 98;
+    width: 80px;
+    user-select: none;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.img4shadow {
+    position: absolute;
+    top: 698px;
+    left: 980px;
+    z-index: 98;
+    width: 80px;
+    user-select: none;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.img5 {
+    position: absolute;
+    top: 698px;
+    left: 700px;
+    z-index: 98;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    user-select: none;
+    background-color: red;
+    overflow: hidden;
+}
+
+.img5shadow {
+    position: absolute;
+    top: 698px;
+    left: 700px;
+    z-index: 98;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    user-select: none;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.time {
+    position: absolute;
+    top: 900px;
+    left: 800px;
+    z-index: 101;
+    font-size: 12px;
+    height: 15px;
+    margin: 5px 0;
+}
+
+.current-time {
+    float: left;
+}
+
+.total-time {
+    float: right;
+}
+
+.current-time,
+.total-time {
+    color: transparent;
+    font-size: 11px;
+    background-color: #e8f5ff;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+}
+
+.time.active .current-time,
+.time.active .total-time {
+    color: rgb(54, 127, 196);
+    background-color: transparent;
+}
+
+#s-area,
+#seek-bar {
+    position: relative;
+    height: 10px;
+    border-radius: 4px;
+}
+
+#tiao-total {
+    position: absolute;
+    top: 945px;
+    left: 505px;
+    z-index: 102;
+    height: 6px;
+    width: 800px;
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+#ins-time {
+    position: absolute;
+    top: -25px;
+    color: red;
+    font-size: 16px;
+    white-space: pre;
+    padding: 5px 6px;
+    border-radius: 4px;
+    display: block;
+}
+
+#alltime {
+    position: absolute;
+    top: -17px;
+    right: -70px;
+    color: red;
+    font-size: 16px;
+    white-space: pre;
+    padding: 5px 6px;
+    border-radius: 4px;
+    display: block;
+}
+
+#seek-bar {
+    position: relative;
+    top: -2px;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    background-color: red;
+}
+
+.word {
+    position: absolute;
+    top: 350px;
+    left: 640px;
+    z-index: 103;
+    height: 100px;
+    width: 500px;
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+}
+
+.comeback {
+    position: absolute;
+    top: 260px;
+    left: 810px;
+    z-index: 103;
+    height: 20px;
+    width: 160px;
+    font-size: 25px;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+}
+
+.comeback:link {
+    color: aliceblue;
+}
+
+.comeback:active {
+    color: aliceblue;
+}
+
+.comeback:hover {
+    color: aliceblue;
+}
+
+#sound {
+    position: absolute;
+    top: 940px;
+    left: 1420px;
+    z-index: 103;
+    height: 6px;
+    width: 150px;
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+#seek-sound {
+    position: relative;
+    top: -1px;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 8px;
+    background-color: red;
+}
+
+#soundbon {
+    position: absolute;
+    left: -34px;
+    top: -8px;
+}
+
+.mulu {
+    position: absolute;
+    top: 645px;
+    left: 1130px;
+    z-index: 109;
+    width: 41px;
+    height: 36px;
+}
+
+.fanhui {
+    position: absolute;
+    top: 270px;
+    left: 870px;
+    z-index: 110;
+    width: 41px;
+    height: 36px;
+
+}
+
+.yincang {
+    position: absolute;
+    top: 270px;
+    left: 870px;
+    z-index: 1;
+    opacity: 0;
+    z-index: 1;
+}
+
+.otherback {
+    position: absolute;
+    top: 250px;
+    left: 678px;
+    z-index: 104;
+    height: 100px;
+    width: 500px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.if {
+    display: block;
+    border: hidden;
+    height: 300px;
+    width: 260px;
+    position: absolute;
+    top: 310px;
+    left: 755px;
+    z-index: 106;
+}

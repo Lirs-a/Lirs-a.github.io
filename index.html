@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>永远的七日之都</title>
+	<link href="css/style1.css" rel="stylesheet" type="text/css">
+	</link>
+</head>
+
+<body>
+	
+	<!-- 顶部广告 -->
+	<div class="top">
+		<div class="logo1"><img src="img/img1/capture_20221012141909990.jpg" width="227" height="66" alt="" /></div>
+		<div class="logo2"><img src="img/img1/10003.jpg" width="504" height="66" alt="" /></div>
+		<div class="logo3"><img src="img/img1/10002.png" width="192" height="66" alt="" /></div>
+		<div class="logo4"><img src="img/img1/capture_20221012141934443.jpg" width="165" height="66" alt="" /></div>
+	</div>
+	<!-- 进来之后看到的主页 -->
+	<div class="fir">
+		<div class="fir1"> <img src="img/img1/10001.jpg" width="1920" height="1000" alt="" /></div>
+		<div class="fir2"><img src="img/img1/10013.png" width="1920" height="1000" alt="" /></div>
+		<div class="fir3"><img src="img/img1/10004.png" width="95" height="122" alt="" /></div>
+	</div>
+	<!-- 侧边跟随移动的导航栏 -->
+	<!-- 原本使用的fixed，因为上层的transform会导致失效，因此改为js -->
+	<div class="side">
+		<div class="side1" id="side"><img src="img/phone/10004.png" width="200" height="67" alt="" /><img
+				src="img/img1/capture_20221012220816998.png" width="203" height="39" alt="" />
+			<li><a href="#">首页</a></li>
+			<li id="loctd1"><a href="javascript:void(0)">咨询</a></li>
+			<li id="loctd2"><a href="javascript:void(0)">视听</a></li>
+			<li id="loctd3"><a href="javascript:void(0)">神器使</a></li>
+			<li id="loctd6"><a href="javascript:void(0)">主题PV</a></li>
+			<li id="loctd4"><a href="javascript:void(0)">声优</a></li>
+			<li id="loctd5"><a href="javascript:void(0)">官网渠道</a></li>
+			<!-- 通过图形的onclick事件达成控制音乐的播放与停止，无音量控制 -->
+			<!-- 到最后也没能实现打开页面音频就播放 -->
+			<audio id="music" src="music/music4/永远的七日之都.mp3" autoplay loop preload="auto"></audio>
+			<a href="javascript:play();"><img id="play" src="img//img4/back/nosound.png" width="40" /></a>
+		</div>
+	</div>
+
+	<div class="news">
+		<!-- 利用css动画效果达成三个图片交替出现 -->
+		<div class="newsleft1"><a href="html/music.html"><img src="img/img1/10007.jpg" width="1090" height="300"
+					class="an" /></a></div>
+		<div class="newsleft2"><a href="html/img.html"><img src="img/img1/10007_1.jpg" width="1090" height="300"
+					class="bn" /></a></div>
+		<div class="newsleft3"><a href="html/video.html"><img src="img/img1/10007_2.jpg" width="1090" height="300"
+					class="cn" /></a></div>
+		<div class="newsright"><img src="img/img1/10006.png" width="929" height="300" alt="" /></div>
+		<div class="menu">
+			<div id="menu1"><a href="javascript:void(0)" id="link">最新</a></div>
+			<div id="menu2"><a href="javascript:void(0)" id="link">新闻</a></div>
+			<div id="menu3"><a href="javascript:void(0)" id="link">维护</a></div>
+			<div id="menu4"><a href="javascript:void(0)" id="link">More+</a></div>
+			<!-- 通过js完成点击菜单某一项时，下面显示此项的内容 -->
+			<!-- 通过更改class名，txt1为显示在最上层，txt2的在最底层 -->
+			<div class="txt2" id="word1">
+				<ui>09-09</ui>
+				<a href="html/video.html" id="link">
+					<li>全国教师免费领网易云黑胶VIP+听书卡</li>
+				</a>
+				<ui>07-14</ui>
+				<a href="html/video.html" id="link">
+					<li>网易新闻再次独家签约法国队</li>
+				</a>
+				<ui>08-05</ui>
+				<a href="html/video.html" id="link">
+					<li>网易公益“一块屏”：让从未出过县城的她们，考进…</li>
+				</a>
+			</div>
+			<div class="txt1" id="word2">
+				<ui>09-09</ui>
+				<a href="html/img.html" id="link">
+					<li>全国教师免费领网易云黑胶VIP+听书卡</li>
+				</a>
+				<ui>08-05</ui>
+				<a href="html/img.html" id="link">
+					<li>网易公益“一块屏”：让从未出过县城的她们，考进…</li>
+				</a>
+				<ui>07-14</ui>
+				<a href="html/img.html" id="link">
+					<li>网易新闻再次独家签约法国队</li>
+				</a>
+				<ui>05-18</ui>
+				<a href="html/video.html" id="link">
+					<li>网易云音乐多位歌手入围金曲奖，在线音乐平台扶持…</li>
+				</a>
+			</div>
+			<div class="txt2" id="word3">
+				<ui>08-11</ui>
+				<a href="html/music.html" id="link">
+					<li>2021.8.11维护公告</li>
+				</a>
+				<ui>07-28</ui>
+				<a href="html/music.html" id="link">
+					<li>2021.7.28维护公告</li>
+				</a>
+				<ui>07-14</ui>
+				<a href="../html/music.html" id="link">
+					<li>2021.7.14维护公告</li>
+				</a>
+				<ui>06-30</ui>
+				<a href="html/music.html" id="link">
+					<li>2021.6.30维护公告</li>
+				</a>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="cen"><img src="img/img1/10008.jpg" width="1920" height="912" alt="" /></div>
+	<div class="cen1"><img src="img/img1/10009.png" width="651" height="193" alt="" /></div>
+	<div class="cen2"><a href="html/music.html"><img src="img/img1/10010.png" width="198" height="46"
+				class="big" /></a></div>
+	<div class="cen_top"><img src="img/img1/10015.png" width="1920" height="450" alt="" /></div>
+	<!-- 通向其他几个页面的导视 -->
+	<div class="cennews">
+		<ul>
+			<li><a href="html/video.html"><img src="img/img1/1.jpg" width="400" height="232" class="big" /></a>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="html/img.html"><img src="img/img1/212.jpg" width="400" height="232" class="big" /></a>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="html/music.html"><img src="img/img1/1313.jpg" width="400" height="232" class="big" /></a>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="javascript:void(0)"><img src="img/img1/144.jpg" width="400" height="232" class="big"
+						id="voice" /></a></li>
+		</ul>
+	</div>
+	<div class="img1"><img src="img/img1/100016.png" width="123" height="84" class="trs" /></div>
+	<div class="img2"><img src="img/img1/100017.png" width="102" height="84" class="trs" /></div>
+	<div class="img3"><img src="img/img1/100116.png" width="90" height="52" class="trs" /></div>
+	<div class="img4"><img src="img/img1/100018.png" width="109" height="84" class="trs" /></div>
+	<div class="img5"><img src="img/img1/100019.png" width="89" height="52" class="trs" /></div>
+	<div class="img6"><img src="img/img1/10020.png" width="114" height="92" class="trs" /></div>
+	<div class="img7"><img src="img/img1/10022.png" width="91" height="52" class="trs" /></div>
+	<div class="img8"><img src="img/img1/100023.png" width="96" height="92" class="trs" /></div>
+	<div class="img9"><img src="img/img1/1412.png" width="49" height="20" class="big" /></div>
+	<div class="bei"><img src="img/img1/100111.jpg" width="1920" height="1053" alt="" /></div>
+	<div class="bei1"><a href="html/img.html"><img src="img/img1/211.png" width="192" height="45" class="big" /></a></div>
+
+	<div>
+		<ai id="spn1"><a href="javascript:void(0)"><img src="img/img1/spn1.png" alt=""></a></ai>
+		<ai id="spn2" class="right"><a href="javascript:void(0)"><img src="img/img1/spn2.png" alt=""></a></ai>
+		</a><img src="img/img1/00.png" alt="" id="pic">
+		<img src="img/img1/00_1.png" alt="" id="pic1">
+		<!-- 原本想设置图片的按动跳转指定图片，后来放到了图像页面 -->
+		<ul>
+			<li id="point2"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point3"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point4"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point9"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point5"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point6"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point7"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+			<li id="point8"><img src="img/img1/spn.png" width="18" height="20" alt="" /></li>
+		</ul>
+	</div>
+
+	<div class="bom"><img src="img/img1/xian.png" width="1400" height="5" alt="" /></div>
+	<!-- 因为可能和音频冲突，因此设置了点击启动，而不是静音情况下自动播放 -->
+	<div class="video">
+		<video class="video_back" src="video/main.mp4" controls id="video">
+			您的浏览器不支持
+		</video>
+		<div class="wen"><img src="img/img1/back1.jpg" width="1920" height="1053" alt="" /></div>
+		</video>
+
+	</div>
+	<div class="tuq"><img src="img/img1/44.jpg" width="1920" height="650" alt="" /></div>
+	<div class="tu1"><img src="img/img1/2119.png" width="916" height="77" alt="" /></div>
+
+
+
+	<div class="tu">
+		<xi><a>雨宫天</a></xi>
+		<xi><a>小田久史</a></xi>
+		<xi><a>三瓶由布子</a></xi>
+		<xi><a>田中千惠美</a></xi>
+		<xi><a>成濑诚</a></xi>
+		<xi><a>早见沙织</a></xi>
+		<xi><a>前野智昭</a></xi>
+		<xi><a>悠木碧</a></xi>
+	</div>
+	<div class="tx">
+		<xi><a>今井麻美</a></xi>
+		<xi><a>川澄绫子</a></xi>
+		<xi><a>洲崎绫</a></xi>
+		<xi><a>田丸笃志</a></xi>
+		<xi><a>西谷亮</a></xi>
+		<xi><a>桧山修之</a></xi>
+		<xi><a>三宅健太</a></xi>
+		<xi><a>渡边优里奈</a></xi>
+	</div>
+	<div class="ty">
+		<xi><a>内田真礼</a></xi>
+		<xi><a>钉宫理惠</a></xi>
+		<xi><a>诹访彩花</a></xi>
+		<xi><a>富坚美铃</a></xi>
+		<xi><a>能登麻美子</a></xi>
+		<xi><a>深川芹压</a></xi>
+		<xi><a>宫田幸秀</a></xi>
+	</div>
+	<div class="tp">
+		<xi><a>内田彩</a></xi>
+		<xi><a>高野麻里佳</a></xi>
+		<xi><a>寸石和弘</a></xi>
+		<xi><a>中慧光城</a></xi>
+		<xi><a>野中蓝</a></xi>
+		<xi><a>藤田咲</a></xi>
+		<xi><a>森川智之</a></xi>
+	</div>
+	<div class="tq">
+		<xi><a>奥村翔</a></xi>
+		<xi><a>坂本真绫</a></xi>
+		<xi><a>立花慎之介</a></xi>
+		<xi><a>中村樱</a></xi>
+		<xi><a>花泽香菜</a></xi>
+		<xi><a>堀江由衣</a></xi>
+		<xi><a>安元洋贵</a></xi>
+	</div>
+	<div class="bg"><img src="img/img1/a1.jpg" width="1920" height="612" alt="" /></div>
+	<div class="ma"><img src="img/img1/a2.png" width="200" height="200	" alt="" /></div>
+	<div class="mag"><img src="img/img1/a4.png" width="23" height="16" alt="" /></div>
+	<div class="lo"><img src="img/img1/a5.png" width="581" height="122" alt="" /></div>
+	<div class="di"><a href="#"><img src="img/img1/a6.png" width="160" height="58" alt="" /></a></div>
+
+
+	<script type="text/javascript" src="js/js1.js"></script>
+</body>
+
+</html>

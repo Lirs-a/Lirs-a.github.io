@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐</title>
+    <link href="../css/style4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- 主页面与背景图片 -->
+        <div class="back"><img src="../img/img4/back/10002.png"> </div>
+        <div class="biaoti"><a href="javascript:void(0)"><img src="../img/img4/back/10019.png" width="500"></a></div>
+        <!-- 播放器的动画，当音乐播放时，唱片开始旋转、右侧唱针放下，音乐停止时 唱片停止，唱针抬起-->
+        <div class="pic1" id="pic1"><img src="../img/img4/back/10021.png"></div>
+        <div class="pic2"><img src="../img/img4/back/10022.png"></div>
+        <div class="pic3"><img src="../img/img4/back/10020.png"></div>
+        <!-- 播放按钮图标 -->
+        <div class="pic4"><a href="javascript:void(0)"><img src="../img/img4/back/10028.png" id="bon"></a></div>
+        <div class="pic5"><img src="../img/img4/back/10029.png"></div>
+        <div class="pic6"><img src="../img/img4/back/10030.png" width="170"></div>
+        <!-- 背景图，当音乐播放时开始闪动，停止时变灰 -->
+        <div class="pic6stic" id="pic3"><img src="../img/img4/back/10033.png" width="170"></div>
+        <div class="pic7"><img src="../img/img4/back/10024.png"></div>
+        <!-- 唱针图标 -->
+        <div class="pic8" id="pic2"><img src="../img/img4/back/10023.png"></div>
+        <!-- 两侧切歌按钮图标 -->
+        <div class="b1"><a href="javascript:void(0)"><img src="../img/img4/back/10026.png" id="left"></a></div>
+        <div class="b2"><a href="javascript:void(0)"><img src="../img/img4/back/10025.png" id="right"></a></div>
+        <!-- 背景 -->
+        <div class="side1"><img src="../img/img4/back/10015.png"></div>
+        <div class="side2"><img src="../img/img4/back/10016.png"></div>
+        <div class="side3"><img src="../img/img4/back/10017.png"></div>
+        <div class="side4"><img src="../img/img4/back/10018.png"></div>
+        <div class="left1"><img src="../img/img4/back/10004.png"></div>
+        <div class="left2"><img src="../img/img4/back/10005.png"></div>
+        <div class="left3"><img src="../img/img4/back/10006.png"></div>
+        <div class="left4"><img src="../img/img4/back/10007.png"></div>
+        <div class="left5"><img src="../img/img4/back/10008.png"></div>
+        <div class="left6"><img src="../img/img4/back/10009.png"></div>
+        <div class="left7"><img src="../img/img4/back/10010.png"></div>
+        <div class="right1"><img src="../img/img4/back/10011.png"></div>
+        <div class="right2"><img src="../img/img4/back/10012.png"></div>
+        <div class="right3"><img src="../img/img4/back/10013.png"></div>
+        <div class="right4"><img src="../img/img4/back/10014.png"></div>
+        <!-- 歌的封面图，中间的为亮，两侧其他附加一层更高的div，设置背景为黑，不透明度降低，达成变暗效果 -->
+        <div class="img1"><img src="../img/img4/pic/10001.png" id="img1" width="150"></div>
+        <div class="img2"><img src="../img/img4/pic/10002.png" id="img2" width="100"></div>
+        <div class="img3"><img src="../img/img4/pic/10074.png" id="img3" width="100"></div>
+        <div class="img4"><img src="../img/img4/pic/10003.png" id="img4" width="80"></div>
+        <div class="img5"><img src="../img/img4/pic/10073.png" id="img5" width="80"></div>
+        <div class="img2shadow"></div>
+        <div class="img3shadow"></div>
+        <div class="img4shadow"></div>
+        <div class="img5shadow"></div>
+        <!-- 点击目录后出现的背景图 -->
+        <div class="yincang" id="ifback"><img src="../img/img4/back/10031.png"></div>
+        <!-- 目录图标 -->
+        <div class="mulu"><a href="javascript:void(0)"><img src="../img/img4/back/10032.png" id="mulu"></a></div>
+        <!-- 返回图标，可以关闭目录 -->
+        <div class="yincang" id="fan"><a href="javascript:void(0)"><img src="../img/img4/back/10034.png"
+                    id="fanhui"></a></div>
+        <!-- 通过另一个页面来存放歌单，来达成部分区域内的滚动事件 -->
+        <iframe src="list.html" id="songs" class="yincang" scrolling="yes"></iframe>
+        <!-- 音频的播放长度条颜色为灰色 -->
+        <div id="tiao-total">
+            <!-- 音频的现在的时间 -->
+            <div id="ins-time"> 00:00</div>
+            <!-- 音频的总时长 -->
+            <div id="alltime">00:00</div>
+            <!-- 已经播放的音乐时长 -->
+            <div id="seek-bar"></div>
+        </div>
+        <!-- 音乐的调节部分总长为灰色 -->
+        <div id="sound"><img src="../img/img4/back/sound.png" width="25 " id="soundbon">
+            <!-- 表示音量的大小的条 -->
+            <div id="seek-sound"></div>
+        </div>
+        <!-- 歌名 -->
+        <div class="word" id="txt">深海火种</div>
+        <a href="../index.html">
+            <!-- 返回主页的连接 -->
+            <div class="comeback">点击返回主页</div>
+        </a>
+    </div>
+    </div>
+    <script type="text/javascript" src="../js/js4.js"></script>
+
+</body>
+
+</html>
