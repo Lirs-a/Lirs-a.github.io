@@ -307,6 +307,87 @@ function init() {
         next();
 
      })
+     audio.addEventListener('loadstart', function () {
+        console.log("客户端开始请求数据");
+        document.getElementById('ins-time').innerText = "00:00";
+        document.getElementById('alltime').innerText = "00:00";
+        playPusebtn.src = "../img/img4/back/10028.png";
+        jpg1.className = "pic1";
+        jpg2.className = "pic8stic";
+        jpg3.className = "pic6stic";
+    }, false);
+    audio.addEventListener('progress', function () {
+        console.log("客户端正在请求数据");
+        document.getElementById('ins-time').innerText = "00:00";
+        document.getElementById('alltime').innerText = "00:00";
+        playPusebtn.src = "../img/img4/back/10028.png";
+        jpg1.className = "pic1";
+        jpg2.className = "pic8stic";
+        jpg3.className = "pic6stic";
+    }, false);
+    // audio.addEventListener('error', function () {
+    //     console.log("请求数据时遇到错误 ");
+    // }, false);
+    // audio.addEventListener('stalled', function () {
+    //     console.log("网速失速 ");
+    // }, false);
+    audio.addEventListener('play', function () {
+        console.log("play()和autoplay开始播放时触发 ");
+        
+        playPusebtn.src = "../img/img4/back/10027.png";
+        jpg1.className = "pic1active";
+        jpg2.className = "pic8active";
+        jpg3.className = "pic6_1";
+        
+    }, false);
+    // audio.addEventListener('pause', function () {
+    //     console.log("暂停触发");
+    // }, false);
+    // audio.addEventListener('loadedmetadata', function () {
+    //     console.log("当指定的音频/视频的元数据已加载时");
+
+
+    // }, false);
+    // audio.addEventListener('loadeddata', function () {
+    //     console.log("当当前帧的数据已加载，但没有足够的数据来播放指定音频/视频的下一帧时，会发生 loadeddata 事件。");
+    // }, false);
+    // audio.addEventListener('waiting', function () {
+    //     console.log("等待数据，并非错误");
+    // }, false);
+    audio.addEventListener('playing', function () {
+        console.log("正在播放时触发。");
+        playPusebtn.src = "../img/img4/back/10027.png";
+        jpg1.className = "pic1active";
+        jpg2.className = "pic8active";
+        jpg3.className = "pic6_1";
+    }, false);
+    // audio.addEventListener('canplay', function () {
+    //     console.log("可以播放，但中途可能因为加载而暂停");
+    // }, false);
+    // audio.addEventListener('canplaythrough', function () {
+    //     console.log("可以播放，歌曲全部加载完毕");
+    // }, false);
+    // audio.addEventListener('seeking', function () {
+    //     console.log("当用户开始移动/跳跃到音频/视频中的新位置时");
+    // }, false);
+    // audio.addEventListener('seeked', function () {
+    //     console.log("当用户已移动/跳跃到音频/视频中的新位置时");
+    // }, false);
+    // audio.addEventListener('timeupdate', function () {
+    //     console.log("播放时间改变");
+    // }, false);
+    // audio.addEventListener('ended', function () {
+    //     console.log("播放结束");
+    // }, false);
+    // audio.addEventListener('ratechange', function () {
+    //     console.log("播放速率改变");
+    // }, false);
+    // audio.addEventListener('durationchange', function () {
+    //     console.log("资源长度改变");
+    // }, false);
+    // audio.addEventListener('volumechange', function () {
+    //     console.log("音量改变");
+    // }, false);
     //console.log(tempSound);
     //点击音量按键后，计数加1当计数为偶数时，音乐有声音，通过记录的之前的长度，确保禁音前后音量不变，计数为奇数时，禁音，音量条归零
     Sound.onclick = function () {
