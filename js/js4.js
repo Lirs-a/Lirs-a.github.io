@@ -331,15 +331,15 @@ function init() {
     // audio.addEventListener('stalled', function () {
     //     console.log("网速失速 ");
     // }, false);
-    audio.addEventListener('play', function () {
-        console.log("play()和autoplay开始播放时触发 ");
+    // audio.addEventListener('play', function () {
+    //     console.log("play()和autoplay开始播放时触发 ");
         
-        playPusebtn.src = "../img/img4/back/10027.png";
-        jpg1.className = "pic1active";
-        jpg2.className = "pic8active";
-        jpg3.className = "pic6_1";
+    //     playPusebtn.src = "../img/img4/back/10027.png";
+    //     jpg1.className = "pic1active";
+    //     jpg2.className = "pic8active";
+    //     jpg3.className = "pic6_1";
         
-    }, false);
+    // }, false);
     // audio.addEventListener('pause', function () {
     //     console.log("暂停触发");
     // }, false);
